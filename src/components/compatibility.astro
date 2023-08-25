@@ -70,20 +70,63 @@ const platforms: Array<CompatibilityItem> = [
 ];
 ---
 
-<ContentSection title="Compatibility" id="compatibility">
+<ContentSection title="Inscription" id="compatibility">
   <Fragment slot="lead">
-    Astro <span class="text-primary">plays nice</span>. Bring your own UI{" "}
-    <span class="text-primary">framework</span>
-     and deploy to your favorite <span class="text-primary">platform</span>.
+    Bientot disponible <span class="text-primary">et opérationelle</span>.
+    Rester à l'écoute
   </Fragment>
-  <CompatibilityList
-    items={frameworks}
-    title="Frameworks"
-    url="https://docs.astro.build/core-concepts/framework-components/"
-  />
-  <CompatibilityList
-    items={platforms}
-    title="Platforms"
-    url="https://docs.astro.build/guides/deploy/"
-  />
+  <section class="bg-white dark:bg-gray-900">
+    <div class="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
+      <h2
+        class="mb-4 text-center font-extrabold tracking-tight text-gray-900 text-4xl dark:text-white"
+      >
+        Juste histoire de...
+      </h2>
+      <p
+        class="mb-8 text-center font-light text-gray-500 dark:text-gray-400 sm:text-xl lg:mb-16"
+      >
+        ... savoir combien nous serons ....
+      </p>
+      <form action="#" class="space-y-8">
+        <div>
+          <label
+            for="name"
+            class="mb-2 block font-medium text-gray-900 text-sm dark:text-gray-300"
+            >Ton nom</label
+          >
+          <input
+            type="text"
+            id="name"
+            class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 shadow-sm text-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+            placeholder="si t'as pas compris je veux ton Blaze"
+            required
+          />
+        </div>
+        <div>
+          <label
+            for="subject"
+            class="mb-2 block font-medium text-gray-900 text-sm dark:text-gray-300"
+          ></label>
+        </div>
+        <div class="sm:col-span-2">
+          <label
+            for="message"
+            class="mb-2 block font-medium text-gray-900 text-sm dark:text-gray-400"
+            >Ton message</label
+          >
+          <textarea
+            id="message"
+            rows="6"
+            class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 shadow-sm text-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+            placeholder="Tu peux mettre ce que tu veux. Des trucs intelligents. Par exemple si tu viens accompagner"
+          ></textarea>
+        </div>
+        <!-- <button
+          type="submit"
+          class="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 rounded-lg px-5 py-3 text-center font-medium text-white text-sm focus:outline-none focus:ring-4 sm:w-fit"
+          >Envoie moi ça</button
+        > -->
+      </form>
+    </div>
+  </section>
 </ContentSection>
