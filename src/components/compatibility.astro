@@ -87,7 +87,7 @@ const platforms: Array<CompatibilityItem> = [
       >
         ... savoir combien nous serons ....
       </p>
-      <form action="#" class="space-y-8">
+      <form action="/enregistrer-invitation" method="POST" class="space-y-8">
         <div>
           <label
             for="name"
@@ -100,6 +100,20 @@ const platforms: Array<CompatibilityItem> = [
             class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 shadow-sm text-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             placeholder="si t'as pas compris je veux ton Blaze"
             required
+          />
+        </div>
+        <div>
+          <label
+            for="accompagn"
+            class="mb-2 block font-medium text-gray-900 text-sm dark:text-gray-300"
+            >Combien tu seras</label
+          >
+          <input
+            type="number"
+            id="accompagn"
+            min="0"
+            max="20"
+            class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 shadow-sm text-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
           />
         </div>
         <div>
@@ -118,7 +132,7 @@ const platforms: Array<CompatibilityItem> = [
             id="message"
             rows="6"
             class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 shadow-sm text-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
-            placeholder="Tu peux mettre ce que tu veux. Des trucs intelligents. Par exemple si tu viens accompagner"
+            placeholder="Tu peux mettre ce que tu veux. Des trucs intelligents... Ou pas"
           ></textarea>
         </div>
         <!-- <button
