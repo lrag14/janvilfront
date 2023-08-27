@@ -4,26 +4,26 @@ import HeroImage from "~/components/hero-image.astro";
 import type { FooterLink } from "~/types";
 
 const links: Array<FooterLink> = [
-  {
-    url: "https://astro.build/",
-    description: "Astro's official website",
-    icon: "mdi:home",
-  },
-  {
-    url: "mailto:laurentrober@@gmail.com",
-    description: "l-rag",
-    icon: "fa-brands:github-alt",
-  },
-  {
-    url: "https://astro.build/chat",
-    description: "© 2023 l-rag",
-    icon: "fa-brands:discord",
-  },
-  {
-    url: "https://twitter.com/astrodotbuild",
-    description: "Astro on Twitter",
-    icon: "fa-brands:twitter",
-  },
+  // {
+  //   url: "https://astro.build/",
+  //   description: "Astro's official website",
+  //   icon: "mdi:home",
+  // },
+  // {
+  //   url: "mailto:laurentrober@@gmail.com",
+  //   description: "© 2023 l-rag",
+  //   icon: "",
+  // },
+  // {
+  //   url: "https://astro.build/chat",
+  //   description: "© 2023 l-rag",
+  //   icon: "fa-brands:discord",
+  // },
+  // {
+  //   url: "https://twitter.com/astrodotbuild",
+  //   description: "Astro on Twitter",
+  //   icon: "fa-brands:twitter",
+  // },
 ];
 ---
 
@@ -31,7 +31,7 @@ const links: Array<FooterLink> = [
   <div class="absolute inset-0 overflow-hidden opacity-40">
     <HeroImage />
   </div>
-  <!-- <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
+  <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
     {
       links.map((link) => (
         <li>
@@ -40,10 +40,9 @@ const links: Array<FooterLink> = [
             href={link.url}
           >
             <span class="sr-only">{link.description}</span>
-            <Icon class="h-full" name={link.icon} />
           </a>
         </li>
       ))
     }
-  </ul> -->
+  </ul>
 </footer>
