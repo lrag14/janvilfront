@@ -1,5 +1,18 @@
 ---
 import ContentSection from "~/components/content-section.astro";
+if (Astro.request.method === "POST") {
+  try {
+    const data = await Astro.request.formData();
+    const name = data.get("name");
+    const accompagn = data.get("accompagn");
+    const message = data.get("message");
+    // Do something with the data
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    }
+  }
+}
 ---
 
 <ContentSection title="Inscription" id="compatibility">
@@ -17,12 +30,7 @@ import ContentSection from "~/components/content-section.astro";
       <p class="mb-8 text-center font-light text-gray-500 sm:text-xl lg:mb-16">
         ... Savoir combien nous serons ....
       </p>
-      <form
-        hx-post="/invitation"
-        action="/invitation"
-        method="POST"
-        class="space-y-8"
-      >
+      <form hx-post="/user" class="space-y-8">
         <div>
           <label for="name" class="gradient-text mb-2 block font-medium text-xl"
             >Ton nom</label
@@ -68,7 +76,7 @@ import ContentSection from "~/components/content-section.astro";
             placeholder="Tu peux mettre ce que tu veux. Des trucs intelligents...🤔 Ou pas 😜"
           ></textarea>
         </div>
-        <!-- <button type="submit" class="gradient-text font-extrabold text-xl"
+        <!-- <button class="gradient-text font-extrabold text-xl"
           >Envoie moi ça</button
         > -->
       </form>
