@@ -6,7 +6,7 @@ import HeroImage from "~/components/hero-image.astro";
 import Starfield from "~/components/starfield.astro";
 
 const widths = [450, 800];
-const sizes = "(min-width: 640px) 20vw, 40vw";
+const sizes = "(min-width: 340px) 20vw, 40vw";
 ---
 
 <section class="relative h-full bg-black">
@@ -16,7 +16,7 @@ const sizes = "(min-width: 640px) 20vw, 40vw";
   </div>
   <div class="relative grid h-full place-items-center sm:grid-cols-2">
     <h2
-      class="flex flex-col gap-2 self-start p-8 sm:gap-4 sm:self-auto sm:justify-self-end"
+      class="flex flex-col gap-2 self-center sm:gap-4 sm:self-auto sm:justify-self-end"
     >
       <div
         class="gradient-text px-8 text-center font-extrabold tracking-tighter text-8xl"
@@ -28,7 +28,8 @@ const sizes = "(min-width: 640px) 20vw, 40vw";
     </h2>
     <div
       id="astronaut"
-      class="w-2/3 max-w-3xl self-start sm:w-10/12 sm:self-auto sm:justify-self-start"
+      class="h-5/6 w-2/3 max-w-3xl self-start
+      sm:w-10/12 sm:self-auto sm:justify-self-start"
     >
       <Picture
         class="object-containt h-full w-full"
