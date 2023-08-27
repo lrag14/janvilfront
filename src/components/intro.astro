@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+// import { Icon } from "astro-icon";
 import ContentSection from "~/components/content-section.astro";
 ---
 
@@ -16,12 +16,14 @@ import ContentSection from "~/components/content-section.astro";
       src="https://res.cloudinary.com/dgakih33l/image/upload/v1692949725/BarbekJanvil/Ty/wonder_1692947117247_iiwzzr.jpg"
       alt="thee"
     />
-    <p
-      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
-      <span
+    <div
+      class="flex items-center justify-center border-2 border-current px-6 py-4"
     >
-      ATTENTION<span class="text-primary">Ceci</span>
-       est une grosse <span class="text-primary">FakeNews</span>
-    </p>
+      <p class="text-6xl" style="white-space: normal;">
+        ATTENTION<span class="text-primary"> Attention</span>
+         Très <strong>grosse</strong>
+        <span class="text-primary">FakeNews</span>
+      </p>
+    </div>
   </div>
 </ContentSection>
