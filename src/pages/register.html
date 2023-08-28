@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>inscription</h1>
+    <form id="inscription" class="space-y-8">
+      <div>
+        <label for="name" class="gradient-text mb-2 block font-medium text-xl"
+          >Ton nom</label
+        >
+        <input
+          type="text"
+          id="name"
+          class="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 shadow-sm text-sm"
+          placeholder="si t'as pas compris c'est ton Blaze"
+          required
+        />
+      </div>
+      <div>
+        <label
+          for="accompagn"
+          class="gradient-text mb-2 block font-medium text-gray-900 text-xl"
+          >Combien tu seras</label
+        >
+        <input
+          type="number"
+          id="accompagn"
+          min="0"
+          max="10"
+          placeholder="👀 👼 🐒 🍷 🍔"
+          class="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 shadow-sm text-sm"
+        />
+      </div>
+      <div>
+        <label
+          for="subject"
+          class="mb-2 block font-medium text-gray-900 text-xl"
+        ></label>
+      </div>
+      <div class="sm:col-span-2">
+        <label
+          for="message"
+          class="gradient-text mb-2 block font-medium text-gray-900 text-xl"
+          >Ton message</label
+        >
+        <textarea
+          id="message"
+          rows="6"
+          class="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 shadow-sm text-sm"
+          placeholder="Tu peux mettre ce que tu veux. Des trucs intelligents...🤔 Ou pas 😜"
+        ></textarea>
+      </div>
+      <button type="submit" class="gradient-text font-extrabold text-xl">
+        Envoie moi ça
+      </button>
+    </form>
+  </body>
+</html>
