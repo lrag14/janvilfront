@@ -10,7 +10,7 @@ import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
-const image = new URL("src/content/showcase/_images/social.jpg", site);
+// const image = new URL("social.jpg");
 const description = "Venez avec votre BONNE HUMEUR";
 ---
 
@@ -33,7 +33,7 @@ const description = "Venez avec votre BONNE HUMEUR";
     <meta property="og:title" content="Barbec" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
+    <!-- <meta property="og:image" content={image} /> -->
     <meta property="og:url" content={site} />
     <meta name="twitter:card" content="summary_large_image" />
 
@@ -72,7 +72,7 @@ const description = "Venez avec votre BONNE HUMEUR";
       <Features />
       <!-- <Compatibility /> -->
     </div>
-    <section class="rounded-2xl">
+    <section class="rounded-2xl" id="compatibility">
       <div
         class="flex max-w-screen-md flex-col items-center justify-center px-4 py-8 align-middle lg:py-16"
       >
