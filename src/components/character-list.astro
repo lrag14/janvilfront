@@ -1,0 +1,61 @@
+---
+import ContentSection from "~/components/content-section.astro";
+
+const characters = [
+  {
+    name: "Laurent",
+    number: "4",
+    message: "J'ramene des chaises",
+  },
+  {
+    name: "Wil",
+    number: "3",
+    message: "Hummm, elle va être bonne.La viande !Biensur ! 😜🤣",
+  },
+  {
+    name: "Lorraine",
+    number: "3",
+    message:
+      "Je ferai: Un tiramisu, un framboisemisu 🤣🤣, et plus si affinités 😈😈",
+  },
+  {
+    name: "Cricri et fredo",
+    number: "2",
+    message: "😊♥️🥩🍷",
+  },
+  {
+    name: "Zineb",
+    number: "4",
+    message: "Garde toujours ton sourire",
+  },
+];
+const totalNumber = characters.reduce(
+  (total, character) => total + parseInt(character.number),
+  0,
+);
+---
+
+<ContentSection title="" id="">
+  <ContentSection title="Qui sera Présent ? " id="character">
+    <Fragment slot="lead">
+      <h1 class="gradient-text px-2 py-4 text-center tracking-tighter text-8xl">
+        Voici déjà les {totalNumber} protagonistes 🤘
+      </h1>
+      {
+        characters.map((character, index) => (
+          <div class="w-2/3">
+            <p class="px-4 py-2 font-bold text-red-800 text-2xl">
+              Yo.. {character.name}. <br />
+              <span class="text-primary">{character.number} en plus.</span>
+              <br />
+              <span class="text-primary">
+                Et pour info, {character.message}
+              </span>
+            </p>
+            <div class="m-2  rounded-xl border-4 border-red-700" />
+          </div>
+        ))
+      }
+    </Fragment>
+  </ContentSection>
+</ContentSection>

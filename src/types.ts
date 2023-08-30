@@ -15,6 +15,11 @@ export interface FooterLink {
   icon: string;
   url: string;
 }
+export interface Character {
+  name: string;
+  number: number;
+  message: string;
+}
 
 export interface NavItem {
   title: string;

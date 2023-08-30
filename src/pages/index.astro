@@ -8,6 +8,9 @@ import Intro from "~/components/market-place.astro";
 import Showcase from "~/components/obligation.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
+import CharacterList from "~/components/character-list.astro";
+import ContentSection from "~/components/content-section.astro";
+import Howmany from "~/components/howmany.astro";
 
 // const { generator, site } = Astro;
 // const image = new URL("social.jpg");
@@ -72,29 +75,24 @@ const description = "Venez avec votre BONNE HUMEUR";
       <Features />
       <!-- <Compatibility /> -->
     </div>
-    <section class="rounded-2xl" id="compatibility">
-      <div
-        class="flex max-w-screen-md flex-col items-center justify-center px-4 py-8 align-middle lg:py-8"
+    <ContentSection title="Juste histoire de..." id="compatibility">
+      <section
+        class="flex flex-col justify-center rounded-xl border border-red-800 p-2"
       >
-        <h2
-          class="gradient-text mb-4 text-center font-extrabold tracking-tight text-7xl"
-        >
-          Juste histoire de...
-        </h2>
-        <p
-          class="mb-8 text-center font-light text-gray-500 sm:text-xl lg:mb-16"
-        >
+        <p class="mb-8 text-center font-light text-gray-500 sm:text-xl">
           ... Savoir combien nous serons ....
         </p>
         <a href="https://dynamic-squirrel-6c91a8.netlify.app">
           <button
             type="submit"
-            class="gradient-text mx-auto font-extrabold text-xl"
+            class="gradient-text mx-auto mb-4 font-extrabold text-xl"
             >💀 Si Tu viens Inscrit Toi 💀
           </button></a
         >
-      </div>
-    </section>
+      </section>
+      <Howmany />
+    </ContentSection>
+    <CharacterList />
   </body>
   <Footer />
 </html>

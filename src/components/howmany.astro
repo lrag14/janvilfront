@@ -1,0 +1,15 @@
+---
+import { Picture } from "@astrojs/image/components";
+import logo from "~/assets/logo.png";
+
+const widths = [450, 800, 1200];
+const sizes = "30vw";
+---
+
+<Picture
+  class="h-full w-full object-cover"
+  src={logo}
+  widths={widths}
+  sizes={sizes}
+  alt="logo"
+/>
