@@ -50,12 +50,10 @@ const totalNumber = characters.reduce(
         characters.map((character, index) => (
           <div class="w-2/3">
             <p class="px-4 py-2 font-bold text-red-800 text-2xl">
-              Yo.. {character.name}. <br />
+              {character.name}. <br />
               <span class="text-primary">{character.number} en plus.</span>
               <br />
-              <span class="text-primary">
-                Et pour info, {character.message}
-              </span>
+              <span class="text-primary">{character.message}</span>
             </p>
             <div class="m-2  rounded-xl border-4 border-red-700" />
           </div>
