@@ -38,6 +38,16 @@ const characters = [
     number: "2",
     message: "Je viens avec ma maman 🤗 je ramène du saucisson 😉",
   },
+  {
+    name: "Elise B",
+    number: "1",
+    message: "Le petit mot intelligent ça être dur dès le matin....",
+  },
+  {
+    name: "Vanessa",
+    number: "3",
+    message: "j emmènerai une grosse salade exotique..",
+  },
 ];
 const totalNumber = characters.reduce(
   (total, character) => total + parseInt(character.number),
@@ -55,8 +65,9 @@ const totalNumber = characters.reduce(
         characters.map((character, index) => (
           <div class="w-2/3">
             <p class="px-4 py-2 font-bold text-red-800 text-2xl">
-              {character.name}. <br />
-              <span class="text-primary">{character.number} en plus.</span>
+              {character.name}
+              <br />
+              <span class="text-primary">{character.number} en plus</span>
               <br />
               <span class="text-primary">{character.message}</span>
             </p>
