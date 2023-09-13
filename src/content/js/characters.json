@@ -58,5 +58,15 @@
     "name": "Nicole",
     "number": "3",
     "message": "J'amène de la salade"
+  },
+  {
+    "name": "Jérôme",
+    "number": "2",
+    "message": "Cake au citron"
+  },
+  {
+    "name": "Sylvie",
+    "number": "2",
+    "message": "Passer un moment super agréable en votre compagnie"
   }
 ]
